@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel · PB Docs</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #d8d4cc;
+    --card: #ffffff;
+    --accent: #c9622f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    padding: 60px 24px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .back {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .back:hover { color: var(--accent); }
+  h1 { font-size: 32px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 16px; }
+  .files {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .file {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+  }
+  .file:last-child { border-bottom: none; }
+  .file:hover { background: #fafafa; }
+  .file .name {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px;
+    color: var(--accent);
+  }
+  .file .meta {
+    color: var(--muted);
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .empty {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">← all folders</a>
+  <h1>Angel's docs</h1>
+  <p class="sub">Prototypes &amp; drafts.</p>
+
+  <div class="files">
+    <a class="file" href="./hello.html">
+      <span style="font-size:16px;">📄</span>
+      <span class="name">hello.html</span>
+      <span class="meta">demo</span>
+    </a>
+  </div>
+</div>
+</body>
+</html>
