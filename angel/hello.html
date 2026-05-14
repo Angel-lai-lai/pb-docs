@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello from Angel</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #c9622f;
+    --green: #2f7a4f;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 480px;
+    background: #fff;
+    border: 1px solid #d8d4cc;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+  }
+  .check {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 16px;
+  }
+  h1 { font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em; }
+  p { color: var(--muted); font-size: 14px; margin: 6px 0; }
+  .url {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    background: #f7f5f1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: var(--accent);
+    margin-top: 16px;
+    word-break: break-all;
+  }
+  a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="check">✓</div>
+  <h1>It's hosted.</h1>
+  <p>This file lives in Angel's folder on GitHub Pages.</p>
+  <p>Phase 1 of the POC — hosting works.</p>
+  <div class="url" id="url"></div>
+  <p style="margin-top: 20px;"><a href="./">← back to my folder</a></p>
+</div>
+<script>
+  document.getElementById('url').textContent = window.location.href;
+</script>
+</body>
+</html>

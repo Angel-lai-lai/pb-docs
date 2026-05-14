@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PB Docs</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #d8d4cc;
+    --card: #ffffff;
+    --accent: #c9622f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    padding: 60px 24px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 40px; font-size: 16px; }
+  .folders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .folder {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .folder:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .folder .name {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .folder .who {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    background: #fdf3da;
+    color: #8a6a00;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Phase 1 POC · No auth yet</span>
+  <h1>PB Docs</h1>
+  <p class="sub">Internal prototypes &amp; drafts. Pick a folder.</p>
+
+  <div class="folders">
+    <a class="folder" href="./angel/">
+      <div class="name">/angel/</div>
+      <div class="who">Angel's prototypes</div>
+    </a>
+    <a class="folder" href="./brian/" style="opacity: 0.5; pointer-events: none;">
+      <div class="name">/brian/</div>
+      <div class="who">(not set up yet)</div>
+    </a>
+    <a class="folder" href="./kaia/" style="opacity: 0.5; pointer-events: none;">
+      <div class="name">/kaia/</div>
+      <div class="who">(not set up yet)</div>
+    </a>
+    <a class="folder" href="./salina/" style="opacity: 0.5; pointer-events: none;">
+      <div class="name">/salina/</div>
+      <div class="who">(not set up yet)</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
