@@ -1,0 +1,6 @@
+[
+  { "slug": "angel",  "name": "Angel's prototypes", "active": true  },
+  { "slug": "brian",  "name": "(not set up yet)",   "active": false },
+  { "slug": "kaia",   "name": "Kaia's prototypes",  "active": true  },
+  { "slug": "salina", "name": "(not set up yet)",   "active": false }
+]
